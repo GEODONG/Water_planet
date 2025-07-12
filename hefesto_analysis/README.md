@@ -1,0 +1,17 @@
+# hefesto_analysis
+
+A Python package for analyzing and visualizing geophysical simulation outputs from HeFESTo.
+
+## Installation
+```bash
+pip install .
+```
+
+## Example
+```python
+from hefesto_analysis import Simulation
+
+sim = Simulation(name="test", title="Test Run", dir="/path/to/data")
+sim.read_profile()
+sim.plot_Mg_Si_ratio_average_all()
+```
